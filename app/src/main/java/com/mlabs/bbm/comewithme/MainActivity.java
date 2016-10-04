@@ -51,7 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
                 if (pword.equals(savePassword1)|pword.equals(savePassword)) {
                     Toast.makeText(MainActivity.this, uname + " has logged in. \n Password: " + pword, Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(MainActivity.this, Activity.class);
+                    Intent intent = new Intent(getApplicationContext(), OnTouchAct.class);
+
                     startActivity(intent);
                 }
                 else{
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        show.setOnTouchListener(new View.OnTouchListener() {
+       /* show.setOnTouchListener(new View.OnTouchListener() {
                                     @Override
                                     public boolean onTouch(View view, MotionEvent motionEvent) {
                                         final int cursor = password.getSelectionStart();
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                                         return false;
                                     }
                                 }
-        );
+        );*/
     }
 
 
