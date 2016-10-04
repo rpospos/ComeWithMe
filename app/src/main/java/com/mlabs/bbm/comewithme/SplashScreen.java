@@ -1,4 +1,4 @@
-package com.mlabs.bbm.firstandroidapp;
+package com.mlabs.bbm.comewithme;
 
 import android.app.Activity;
 import android.content.Intent;
