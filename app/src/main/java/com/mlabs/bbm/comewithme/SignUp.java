@@ -111,8 +111,10 @@ public class SignUp extends AppCompatActivity {
         return matcher.matches();
     }
 
-
-
-
+    @Override
+    protected void onPause(){
+        super.onPause();
+        finish();
+    }
 
 }
