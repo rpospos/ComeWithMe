@@ -122,6 +122,11 @@ public class MainActivity extends AppCompatActivity {
         return matcher.matches();
     }
 
+    @Override
+    protected void onPause(){
+        super.onPause();
+        finish();
+    }
 }
 
 
